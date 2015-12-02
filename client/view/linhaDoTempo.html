@@ -1,0 +1,22 @@
+<template name="linhaDoTempo">
+	<div class="row">
+		<fieldset class="col-sm-12">
+			<legend>últimos posts</legend>
+			{{#each posts}}
+				<blockquote class="lead">
+					<p>{{message}}</p>
+					<small>Autor:
+						<a href="/user/{{userId}}">{{name}}</a>
+					</small>
+				</blockquote>
+				<hr>
+			{{else}}
+			<blockquote class="lead">
+				<p class="lead text-center">
+					Nenhum post publicado.
+				</p>
+			</blockquote>
+			{{/each}}
+		</fieldset>
+	</div>
+</template>

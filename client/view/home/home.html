@@ -1,0 +1,17 @@
+<template name="home">
+	{{#if currentUser}}
+		<aside class="col-sm-3">
+			{{> profile}}
+			{{> friendship}}
+		</aside>
+		<section class="col-sm-9">
+			{{> post}}
+			{{> linhaDoTempo}}
+		</section>
+	{{else}}
+		<div class="text-center">
+			<h1>Fuck Yeah!</h1>
+			<h3>Já é cadastrado? Não? Então é só cadastrar ;)</h3>
+		</div>
+	{{/if}}
+</template>

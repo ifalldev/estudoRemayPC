@@ -1,0 +1,9 @@
+{
+	"name": "Rede Social",
+	"description": "Rede Social",
+	"author": "Caio Batista <caioba93@icloud.com>",
+	"version": "0.0.1",
+	"packages": {
+		"bootstrap-3": {}		
+	}
+}
